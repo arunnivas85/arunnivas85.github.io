@@ -1,0 +1,16 @@
+TNEB Details
+Admin Panel URL
+http://www.tnebengineers.in/admin
+Admin Extra Security
+Username: newcomer
+Password: Newcomer@2019
+--------------------------------------------------------------------------------------------------------------------------------------
+Admin Panel Details
+Username: tnebea2015
+Password: Welcometnebea2019 
+--------------------------------------------------------------------------------------------------------------------------------------
+FTP Details
+Host: ftp.tnebengineers.in
+Port: 21
+Username: admin@tnebengineers.in
+Password: Welcomenewcomer@2019
