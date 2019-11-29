@@ -21,6 +21,16 @@
             width: 100%;
             height: 100%;
         }
+    
+    
+        /* Button color Changer */
+        .clrcircle {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin: 6px;
+           /* background-color: #555; */
+        }
     </style>
 
     <script>
@@ -60,8 +70,13 @@
                 //interval: 200,
                 duration: 4000
             });
+
+            //For Tooltip
+            $('[data-toggle="tooltip"]').tooltip();   
         });
     </script>
+
+
 
 </head>
 
@@ -77,11 +92,27 @@
                 <strong><span class="small font-weight-bold"> Welcome to TamilNadu Electricity Board Engineers
                         Association's website !!</span></strong>
             </div>
-            <div class="col">
+            
+            <div class="col-sm-2 text-right">
+                    <font size="2"><a href="javascript:void(0);" onclick="changemysize(16);">A</a></font>
+                    <font size="4"><a href="javascript:void(0);" onclick="changemysize(20);">A</a></font>
+                    <font size="5"><a href="javascript:void(0);" onclick="changemysize(25);">A</a></font>
+                    <div id="mymain">
+                    Only this text gets affected
+                    </div>
+                    <script>
+                        function changemysize(myvalue) {
+                            var div = document.getElementById("mymain");
+                            div.style.fontSize = myvalue + "px";
+                        }
+                    </script>
+              
+            </div>
 
-                <button type="button" class="btn" id="Bluebutton">Blue</button>
-                <button type="button" class="btn" id="Yellowbutton">Yellow</button>
-                <button type="button" class="btn" id="Orangebutton">Orange</button>
+            <div class="col-sm-2 text-right text-bottom">
+                <a href="#" id="Bluebutton" data-toggle="tooltip" data-placement="bottom" title="Blue Theme!"><span class="clrcircle rounded-circle small bg-info"></span></a>
+                <a href="#" id="Yellowbutton" data-toggle="tooltip" data-placement="bottom" title="Green Theme!" ><span class="clrcircle rounded-circle small bg-success"></span></a>
+                <a href="#" id="Orangebutton" data-toggle="tooltip" data-placement="bottom" title="Orange Theme!"><span class="clrcircle rounded-circle small badge-danger"></span></a>
 
             </div>
         </div>
@@ -213,7 +244,7 @@
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="ny.jpg" alt="./images/New York" width="500" height="500">
+                            <img src="./images/ny.jpg" alt="New York" width="500" height="500">
                             <div class="carousel-caption">
                                 <h3>New York</h3>
                                 <p>Rocking in Hot of the City!</p>
@@ -289,7 +320,6 @@
     <!-- Start Tabbed / Card Content -->
     <div class="container-fluid mt-3">
         <div class="row">
-
             <!-- Tabbed -->
             <div class="col-sm-6">
                 <h6 class="text-primary">Contents / Information Update </h6>
@@ -637,8 +667,8 @@
             <div class="row">
             <div class="col">
             <p class="text-left text-dark">
-            <span>Total No of Visitors: xxxx</span> <br>
-            <span>Last Updated on: xxx</span>
+            <span>Total Visitors: xxxx</span> <br>
+            <span>Last Updated on: xx-xx-xxxx</span>
         </p>
            </div>
            <p class="m-0 text-center text-white">Copyright &copy; TNEBEA 2019</p>
