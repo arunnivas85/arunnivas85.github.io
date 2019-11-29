@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>TN Electricity Board Association</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+
+    <script src="./js/jquery.marquee.min.js"></script>
+    <script src="./js/Jquery.multislider.min.js"></script>
+    <link href="./css/jquery.multislider.css" rel="stylesheet" type="text/css">
+
+    <style>
+        /* Make the image fully responsive */
+        .carousel-inner img {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+
+    <script>
+        // Jquery Marquee with customized options
+        $(function () {
+            $('.marquee-with-left').marquee({
+                speed: 100,
+                gap: 50,
+                delayBeforeStart: 0,
+                direction: 'left',
+                pauseOnHover: true
+                // startVisible: false,
+                // allowCss3Support: true,
+                // css3easing: 'linear',
+                // easing: 'linear',
+
+            });
+            $('.marquee-with-up').marquee({
+                speed: 100,
+                gap: 50,
+                delayBeforeStart: 0,
+                direction: 'up',
+                pauseOnHover: true
+                // startVisible: false,
+                // allowCss3Support: true,
+                // css3easing: 'linear',
+                // easing: 'linear',
+
+            });
+        });
+
+
+        //For Bottom multislider
+        $(document).ready(function () {
+            $('#basicSlider').multislider({
+                continuous: true,
+                //interval: 200,
+                duration: 4000
+            });
+        });
+    </script>
+
+</head>
+
+<body style="background-color: whitesmoke;">
+
+    <!-- Start Scroller -->
+    <div class="container-fluid ">
+        <div id="Header" class="row" style="background-color:whitesmoke;">
+
+            <!-- <marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();">
+                                <strong>Tamil Nadu Electricity Board Engineers Association Site</strong></marquee> -->
+            <div class="col-sm-8 marquee-with-left text-secondary" style="overflow: hidden;">
+                <strong><span class="small font-weight-bold"> Welcome to TamilNadu Electricity Board Engineers
+                        Association's website !!</span></strong>
+            </div>
+            <div class="col">
+
+                <button type="button" class="btn" id="Bluebutton">Blue</button>
+                <button type="button" class="btn" id="Yellowbutton">Yellow</button>
+                <button type="button" class="btn" id="Orangebutton">Orange</button>
+
+            </div>
+        </div>
+    </div>
+    <!-- End Scroller -->
+
+    <!-- Start Logo/Heading -->
+    <div class="container-fluid">
+
+        <div id="Header1" class="row" style="background-color:whitesmoke;">
+            <div class="col-sm-1">
+                <img src="tneblogo.png" class="rounded-circle" height="100px" width="100px" alt="TNEBEA logo">
+            </div>
+            <div class="col-sm-8">
+                <br>
+                <h3 class="text-primary" style="font-family: 'Comfortaa';font-size: 22px;">Tamilnadu Electricity Board
+                    Engineers Association (TNEBEA) </h3>
+                <p class="text-secondary">The association was formed & registerd in 1946.</p>
+            </div>
+
+            <div class="col-sm-3 ">
+                <br>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control" type="text" placeholder="Search"> <!--  mr-sm-2 -->
+                    <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+                </form>
+                <!-- <a href="#">Login</a> | <a href="#">Register</a> -->
+
+                <div class="content">
+                    <div id="clockbox" class="text-secondary font-weight-bold"></div>
+                    <script type="text/javascript">
+                        var tday = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+                        var tmonth = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+                        function GetClock() {
+                            var d = new Date();
+                            var nday = d.getDay(), nmonth = d.getMonth(), ndate = d.getDate(), nyear = d.getFullYear();
+                            var nhour = d.getHours(), nmin = d.getMinutes(), nsec = d.getSeconds();
+                            if (nmin <= 9) nmin = "0" + nmin;
+                            if (nsec <= 9) nsec = "0" + nsec;
+                            var clocktext = "" + tday[nday] + ", " + ndate + "-" + tmonth[nmonth] + "-" + nyear + ", " + nhour + ":" + nmin + ":" + nsec + "";
+                            document.getElementById('clockbox').innerHTML = clocktext;
+                        }
+                        GetClock();
+                        setInterval(GetClock, 1000);
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Logo/Heading -->
+
+    <!-- Start Header Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top ">
+        <a class="navbar-brand" href="#">TNEBEA </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+            aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Gallery</a>
+                </li>
+
+                <!-- Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Services
+                    </a>
+                    <div class="dropdown-menu animated--grow-in">
+                        <a class="dropdown-item" href="#">Ask Expert</a>
+                        <a class="dropdown-item" href="#">Area Lookup</a>
+                        <a class="dropdown-item" href="#">Online Payment</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Others</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Important Links</a>
+                </li>
+                <li class="nav-item right">
+                    <a class="nav-link" href="#">Awareness</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+    <!-- End Header Navigation -->
+
+
+    <!-- Start Carousel/Update Box -->
+    <div class="container-fluid">
+        <!-- Control the column width, and how they should appear on different devices -->
+        <div class="row">
+            <div class="col-sm-8" style="padding: 10px; padding-right: 0%;">
+                <div id="demo" class="carousel slide" data-ride="carousel">
+
+                    <!-- Indicators -->
+                    <ul class="carousel-indicators">
+                        <li data-target="#demo" data-slide-to="0" class="active"></li>
+                        <li data-target="#demo" data-slide-to="1"></li>
+                        <li data-target="#demo" data-slide-to="2"></li>
+                    </ul>
+
+                    <!-- The slideshow -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-80" src="./images/la.jpg" alt="Los Angeles">
+                            <div class="carousel-caption">
+                                <h3>Los Angeles</h3>
+                                <p>We had such a great time in LA!</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-80" src="./images/chicago.jpg" alt="Chicago">
+                            <div class="carousel-caption">
+                                <h3>Chicagos</h3>
+                                <p>Another Beautiful moment in Chicago!</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="ny.jpg" alt="./images/New York" width="500" height="500">
+                            <div class="carousel-caption">
+                                <h3>New York</h3>
+                                <p>Rocking in Hot of the City!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#demo" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-4" style="padding: 10px; padding-bottom: 0%;">
+                <div class="card mb-3" style="max-height: 310px">
+                    <!-- style="max-height: 400px;min-height: 400px" -->
+                    <h6 id="cardUpdates" class="card-header text-primary">New updates !</h6>
+                    <div class="card-body marquee-with-up" style="overflow: hidden;">
+
+                        <a href="#">
+                            <span class="card-title text-primary font-weight-normal">Title Notification 1</span>
+                        </a>
+                        <span class="badge badge-success">New</span>
+
+                        <!-- <h6 class="card-subtitle text-muted">Subtitle</h6> -->
+                        <p class="card-text" style="font-size:14px">Welcome to Tamilnadu Electricity Board Engineers'
+                            Association.
+                            quick example text to build on the card title and make up the bulk of the card's
+                            content.
+                        </p>
+
+                        <a href="#">
+                            <span class="card-title text-primary font-weight-normal">Title Notification 2</span>
+                        </a>
+                        <!-- <h6 class="card-subtitle text-muted">Subtitle</h6> -->
+                        <p class="card-text" style="font-size:14px">Welcome to Tamilnadu Electricity Board Engineers'
+                            Association.
+                            quick example text to build on the card title and make up the bulk of the card's
+                            content.
+                        </p>
+                        <span class="card-title text-primary font-weight-normal">Title Notification 3</span>
+                        <!-- <h6 class="card-subtitle text-muted">Subtitle</h6> -->
+                        <p class="card-text" style="font-size:14px">Welcome to Tamilnadu Electricity Board Engineers'
+                            Association.
+                            quick example text to build on the card title and make up the bulk of the card's
+                            content.
+                        </p>
+                        <span class="card-title text-primary font-weight-normal">Title Notification 4</span>
+                        <!-- <h6 class="card-subtitle text-muted">Subtitle</h6> -->
+                        <p class="card-text" style="font-size:14px">Welcome to Tamilnadu Electricity Board Engineers'
+                            Association.
+                            quick example text to build on the card title and make up the bulk of the card's
+                            content.
+                        </p>
+
+                    </div>
+
+                    <!-- <div class="card-footer">
+                        <p class="card-text text-right small"> <a href=""> More Details >> </a> </p>
+                    </div> -->
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- End Carousel/Update Box -->
+
+
+    <!-- Start Tabbed / Card Content -->
+    <div class="container-fluid mt-3">
+        <div class="row">
+
+            <!-- Tabbed -->
+            <div class="col-sm-6">
+                <h6 class="text-primary">Contents / Information Update </h6>
+                <hr>
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active " data-toggle="tab" href="#home" style="font-size:14px;">Information
+                            Corner</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#menu1" style="font-size:14px;">Forms and
+                            Affidavits</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" data-toggle="tab" href="#menu2" style="font-size:14px;">Document
+                            Advisor</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#menu3" style="font-size:14px;">Feedback</a>
+                    </li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content border">
+                    <div id="home" class="container tab-pane active"><br>
+                        <h3>HOME</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt ut
+                            labore et
+                            dolore magna aliqua.</p>
+                    </div>
+                    <div id="menu1" class="container tab-pane fade"><br>
+                        <h3>Menu 1</h3>
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                            commodo
+                            consequat.
+                        </p>
+                    </div>
+                    <div id="menu2" class="container tab-pane fade">
+                        <br>
+                        <table class="table table-bordered table-sm">
+                            <tr>
+                                <td>January</td>
+                                <td>January@example.com</td>
+                            </tr>
+                            <tr>
+                                <td>March</td>
+                                <td>March@example.com</td>
+                            </tr>
+                            <tr>
+                                <td>July</td>
+                                <td>july@example.com</td>
+                            </tr>
+                            <tr>
+                                <td>August</td>
+                                <td>August@example.com</td>
+                            </tr>
+                            <tr>
+                                <td>Septemper</td>
+                                <td>Septemper@example.com</td>
+                            </tr>
+                            <tr>
+                                <td>Decemeber</td>
+                                <td>Decemeber@example.com</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div id="menu3" class="container tab-pane fade"><br>
+                        <h3>Menu 3</h3>
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                            commodo
+                            consequat.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Tabbed End -->
+
+            <!-- Card Start -->
+            <!-- <div class="col-sm-6">
+                    <div class="row">
+                        <div class="col-md-4 mb-5">
+                            <div class="card h-100">
+                                <img class="card-img-top" src="ny.jpg" alt="">
+                                <div class="card-body">
+                                    <h4 class="card-title">Card title</h4>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Sapiente esse
+                                        necessitatibus neque sequi doloribus.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal"> Find
+                                        Out
+                                        More!</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-5">
+                            <div class="card h-100">
+                                <img class="card-img-top" src="la.jpg" alt="">
+                                <div class="card-body">
+                                    <h4 class="card-title">Card title</h4>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Sapiente esse
+                                        necessitatibus neque sequi doloribus totam ut praesentium aut.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Find
+                                        Out
+                                        More!</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-5">
+                            <div class="card h-100">
+                                <img class="card-img-top" src="chicago.jpg" alt="">
+                                <div class="card-body">
+                                    <h4 class="card-title">Card title</h4>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Sapiente esse
+                                        necessitatibus neque.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Find
+                                        Out
+                                        More!</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-5">
+                                <div class="card h-100">
+                                    <img class="card-img-top" src="chicago.jpg" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Card title</h4>
+                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                            Sapiente esse
+                                            necessitatibus neque.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Find
+                                            Out
+                                            More!</a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div> -->
+
+            <div class="col-sm-6">
+                <h6 class="text-primary"> Cards </h6>
+                <hr>
+                <div class="card-columns">
+                    <div class="card bg-primary">
+                        <div class="card-body text-center">
+                            <p class="card-text" >
+                                    <a href="#" class="btn" style="font-size: 14px;" data-toggle="modal" data-target="#myModal">Members Login</a></p>
+                        </div>
+                    </div>
+                    <div class="card bg-warning">
+                        <div class="card-body text-center">
+                            <p class="card-text" >
+                                    <a href="#" class="btn" style="font-size: 14px;" data-toggle="modal" data-target="#myModal">Members Enrollment</a></p>
+                        </div>
+                    </div>
+                    <div class="card bg-success">
+                        <div class="card-body text-center">
+                            <p class="card-text" style="font-size: 14px;"><a href="#" class="btn" style="font-size: 14px;" data-toggle="modal" data-target="#myModal">EBF Enrollment</a></p>
+                        </div>
+                    </div>
+                    <div class="card bg-danger">
+                        <div class="card-body text-center">
+                            <p class="card-text" style="font-size: 14px;"><a href="#" class="btn" style="font-size: 14px;" data-toggle="modal" data-target="#myModal">Engineers Handbook</a></p>
+                        </div>
+                    </div>
+                    <div class="card bg-secondary">
+                        <div class="card-body text-center">
+                            <p class="card-text no-gutters" style="font-size: 14px;"><a href="#" class="btn" style="font-size: 14px;" data-toggle="modal" data-target="#myModal">GrievanceSubmission</a></p>
+                        </div>
+                    </div>
+                    <div class="card bg-info">
+                        <div class="card-body text-center">
+                            <p class="card-text" style="font-size: 14px;"><a href="#" class="btn" style="font-size: 14px;" data-toggle="modal" data-target="#myModal">Others</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card End -->
+        </div>
+    </div>
+    <!-- End Tabbed & Cards Content -->
+
+    <!-- Start Page Content -->
+    <hr>
+    <!-- End Page Content -->
+
+
+    <!-- Start MultiSlider -->
+    <div class="container-fluid">
+        <div id="basicSlider">
+            <div class="MS-content">
+                <div class="item"> <a href="http://www.google.com" target="_blank"> <img
+                            src="https://www.nsgm.gov.in/sites/default/files/styles/front_page_icon_slider_220_100/public/mygov_7.png"
+                            alt="" /> </a> </div>
+                <div class="item"> <a href="http://www.google.com" target="_blank"> <img
+                            src="https://www.nsgm.gov.in/sites/default/files/styles/front_page_icon_slider_220_100/public/natportal_0.png"
+                            alt="" /> </a> </div>
+                <div class="item"> <a href="http://www.google.com" target="_blank"> <img
+                            src="https://www.nsgm.gov.in/sites/default/files/styles/front_page_icon_slider_220_100/public/minofpower_3.png"
+                            alt="" /> </a> </div>
+                <div class="item"> <a href="http://www.google.com" target="_blank"> <img src="https://cdn.dealerspike.com/imglib/ManufacturerLogos/thor-motorcoach/thor-logo-sm.png"
+                            alt="" /> </a> </div>
+                <div class="item"> <a href="http://www.google.com" target="_blank"> <img src="https://cdn.dealerspike.com/imglib/ManufacturerLogos/winnebago/aspect/aspect-logo-sm.png"
+                            alt="" /> </a> </div>
+                <div class="item"> <a href="http://www.google.com" target="_blank"> <img
+                            src="https://www.nsgm.gov.in/sites/default/files/styles/front_page_icon_slider_220_100/public/digitalindia_0.png"
+                            alt="" /> </a> </div>
+                <div class="item"> <a href="http://www.google.com" target="_blank"> <img src="https://cdn.dealerspike.com/imglib/ManufacturerLogos/coachmen-rv/leprechaun/leprechaun-logo-sm.png"
+                            alt="" /> </a> </div>
+                <div class="item"> <a href="http://www.google.com" target="_blank"> <img src="https://cdn.dealerspike.com/imglib/ManufacturerLogos/FXR/fxr-small.png"
+                            alt="" /> </a> </div>
+                <div class="item"> <a href="http://www.google.com" target="_blank"> <img src="https://cdn.dealerspike.com/imglib/ManufacturerLogos/forest-river/salem/salem-logo-sm.png"
+                            alt="" /> </a> </div>
+                <div class="item"> <a href="http://www.google.com" target="_blank"> <img src="http://placehold.it/125x26"
+                            alt="" /> </a> </div>
+                <div class="item"> <a href="http://www.google.com" target="_blank"> <img src="http://placehold.it/125x26"
+                            alt="" /> </a> </div>
+                            <button class="MS-right"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+            </div>
+            <!-- <div class="MS-controls">
+                <button class="MS-left"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+                <button class="MS-right"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+            </div> -->
+        </div>
+    </div>
+    <hr>
+    <!-- End MultiSlider -->
+
+
+    <!-- Start Modal Box -->
+    <div class="container">
+        <!-- The Modal -->
+        <div class="modal" id="myModal">
+            <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h1 class="modal-title">Detailed Window</h1>
+                        <button type="button" class="close" data-dismiss="modal">×</button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <h3>Title of the story..</h3>
+                        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed
+                            do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis
+                            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                            pariatur.
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                            mollit
+                            anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore
+                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris
+                            nisi ut aliquip ex ea commodo consequat.</p>
+                        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed
+                            do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis
+                            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                            pariatur.
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                            mollit
+                            anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore
+                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris
+                            nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- End Modal Box -->
+
+
+
+
+
+    <script>
+        $(document).ready(function () {
+            $("#Bluebutton").click(function () {
+                //alert("Text: " + $("#Bluebutton").text());
+
+                //$("body").css("background-color", "lightBlue");
+                $("#Header").css("background-color", "lightBlue");
+                $("#Header1").css("background-color", "lightBlue");
+                $("#MainNavigation").css("background-color", "lightBlue");
+                $("#cardUpdates").css("background-color", "lightBlue");
+
+            });
+            $("#Yellowbutton").click(function () {
+                //alert("Text: " + $("#Yellowbutton").text());
+                //$("body").css("background-color", "Yellow");
+                $("#Header").css("background-color", "lightgreen");
+                $("#Header1").css("background-color", "lightgreen");
+                $("#MainNavigation").css("background-color", "lightgreen");
+                $("#cardUpdates").css("background-color", "lightgreen");
+            });
+            $("#Orangebutton").click(function () {
+                //alert("Text: " + $("#Orangebutton").text());
+                //$("body").css("background-color", "Orange");
+                $("#Header").css("background-color", "lightcoral");
+                $("#Header1").css("background-color", "lightcoral");
+                $("#MainNavigation").css("background-color", "lightcoral");
+                $("#cardUpdates").css("background-color", "lightcoral");
+            });
+            // $("budtton").click(function () {
+            //     $("*").css("background-color", "lightBlue");
+
+            //     alert("Blasdfsd");
+            //     // $("*").css({"font-size": "110%", "line-height": "2"});
+            //     // $("*").css("class", "AAA");
+            //     //$('.demo').textTailor({"minFont":"2","fit": "true"});
+            // });
+        });
+    </script>
+
+
+    <!-- Start Footer -->
+    <footer class="py-4 bg-primary">
+        <div class="container-fluid">
+            <div class="row">
+            <div class="col">
+            <p class="text-left text-dark">
+            <span>Total No of Visitors: xxxx</span> <br>
+            <span>Last Updated on: xxx</span>
+        </p>
+           </div>
+           <p class="m-0 text-center text-white">Copyright &copy; TNEBEA 2019</p>
+            <div class="col">
+            </div>
+        </div>
+        </div>
+
+    </footer>
+    <!--End Footer -->
+
+</body>
+
+</html>
