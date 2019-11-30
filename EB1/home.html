@@ -245,8 +245,8 @@
     <!-- Start Carousel/Update Box -->
     <div class="container-fluid">
         <!-- Control the column width, and how they should appear on different devices -->
-        <div class="row">
-            <div class="col-sm-7" style="padding: 10px; padding-right: 0%;">
+        <div class="row ">
+            <div class="col-sm-7 p-2">
                 <div id="demo" class="carousel slide" data-ride="carousel">
 
                     <!-- Indicators -->
@@ -290,13 +290,13 @@
                     </a>
                 </div>
             </div>
-            <div class="col-sm-5" style="padding-top: 10px">
+            <div class="col-sm-5 p-2" >
 
-                <div class="row">
-                    <div class="col-sm-11">
+                <div class="row no-gutters">
+                    <div class="col-sm-10">
 
                         <!-- style="padding: 10px; padding-bottom: 0%;" -->
-                        <div class="card mb-3 h-100 d-inline-block">
+                        <div class="card mb-3  h-100  d-inline-block" style="min-height: 270px; max-height: 270px" >
                             <!-- style="max-height: 400px;min-height: 400px"  style="max-height: 310px" -->
                             <h6 id="cardUpdates" class="card-header text-primary">New updates !</h6>
                             <div class="card-body marquee-with-up" style="overflow: hidden;">
@@ -332,14 +332,6 @@
                                     quick example text to build on the card title and make up the bulk of the card's
                                     content.
                                 </p>
-                                <span class="card-title text-primary font-weight-normal">Title Notification 4</span>
-                                <!-- <h6 class="card-subtitle text-muted">Subtitle</h6> -->
-                                <p class="card-text" style="font-size:14px">Welcome to Tamilnadu Electricity Board
-                                    Engineers'
-                                    Association.
-                                    quick example text to build on the card title and make up the bulk of the card's
-                                    content.
-                                </p>
 
                             </div>
 
@@ -348,17 +340,44 @@
                     </div> -->
                         </div>
                     </div>
-                    <div class="col-sm-1" style="background-color:whitesmoke;">
+                    <div class="col-sm-2 pl-3" >
+                            <!-- <div class="d-flex flex-column mb-3">
+                                    <div class="p-2 bg-info"> item 1</div>
+                                    <div class="p-2 bg-warning">  item 2</div>
+                                    <div class="p-2 bg-primary">  item 3</div>
+                                  </div> -->
+
+                            <!-- <div class="container-fluid">
+                                    <div class="row no-gutters">
+                                        <div class="col-3 col-sm-2 col-md-2 col-lg-1 col-xl-1">
+                                         <div class="col">
+                                            <nav class="nav navbar-light navbar-toggleable-sm">
+                                                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarWEX" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                                    <span class="navbar-toggler-icon"></span>
+                                                </button>
+                                                <div class="navbar-collapse collapse flex-column mt-md-0 mt-4 pt-md-0 pt-4" id="navbarWEX">
+                                                    <a class="nav-link navbar-brand active" href="~/Views/Forms/ControlPanel.cshtml"><span class="fa fa-home"></span></a>
+                                                    <a href="" class="nav-link">Linnk</a>
+                                                    <a href="" class="nav-link">Linnk</a>
+                                                    <a href="" class="nav-link">Linnk</a>
+                                                </div>
+                                            </nav>
+                                        </div>
+                                        <div class="col-9 col-sm-10 col-md-10 col-lg-11 col-xl-11">
+                                           <h2>Hello There</h2> 
+                                        </div>
+                                    </div>
+                                </div> -->
                     
                             <style>
                                     #mySidenav a {
                                       position: absolute;
-                                      right: -80px;
+                                      right: -20px;
                                       transition: 0.3s;
-                                      padding: 15px;
+                                      padding: 10px;
                                       width: 100px;
                                       text-decoration: none;
-                                      font-size: 20px;
+                                      font-size: 10px;
                                       color: white;
                                       border-radius: 5px 0 0 5px;
                                     }
@@ -368,31 +387,40 @@
                                     }
                                     
                                     #about {
-                                      top: 20px;
+                                      top: 0px;
                                       background-color: #4CAF50;
                                     }
                                     
                                     #blog {
-                                      top: 80px;
+                                      top: 45px;
                                       background-color: #2196F3;
                                     }
                                     
                                     #projects {
-                                      top: 140px;
+                                      top: 105px;
                                       background-color: #f44336;
                                     }
                                     
-                                    #contact {
-                                      top: 200px;
+                                    #contacttt {
+                                      top: 165px;
+                                      background-color: #557
+                                    }
+                                    #contact1 {
+                                      top: 225px;
                                       background-color: #555
                                     }
                                     </style>
-                                    <div id="mySidenav" class="sidenav">
-                                            <a href="#" id="about">About</a>
-                                            <a href="#" id="blog">Blog</a>
-                                            <a href="#" id="projects">Projects</a>
-                                            <a href="#" id="contact">Contact</a>
-                                          </div>
+                                    <div id="mySidenav" class="sidenav  ">
+                                        <a href="#" id="about">TNEB Limited</a>
+                                        <a href="#" id="blog">TANGEDCO Statistics</a>
+                                        <a href="#" id="projects">TANTRANSCO Statistics</a>
+                                        <a href="#" id="contacttt">Know about Latest Projects</a>
+                                        <a href="#" id="contact1">Discussion forum for Engineers</a>
+
+                                    </div>
+
+                                    
+
                     </div>
 
                 </div>
@@ -405,7 +433,7 @@
 
 
     <!-- Start Tabbed / Card Content -->
-    <div class="container-fluid mt-3">
+    <div class="container-fluid">
         <div class="row">
             <!-- Tabbed -->
             <div class="col-sm-6">
