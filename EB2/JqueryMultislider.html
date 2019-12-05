@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>TN Electricity Board Association</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+
+
+    <script src="https://www.nsgm.gov.in/sites/all/themes/multipurpose_zymphonies_theme/js/modern-ticker.js"></script>
+
+    <script src="./js/Jquery.multislider.min.js"></script>
+
+    <link href="./css/jquery.multislider.css" rel="stylesheet" type="text/css">
+
+    <!-- <style type="text/css">
+        .container {
+            margin: 150px auto;
+        }
+
+        #basicSlider {
+            position: relative;
+        }
+
+        #basicSlider .MS-content {
+            white-space: nowrap;
+            overflow: hidden;
+            margin: 0 2%;
+            height: 50px;
+        }
+
+        #basicSlider .MS-content .item {
+            display: inline-block;
+            width: 20%;
+            position: relative;
+            vertical-align: top;
+            overflow: hidden;
+            height: 100%;
+            white-space: normal;
+            line-height: 50px;
+            vertical-align: middle;
+        }
+
+        @media (max-width: 991px) {
+
+            #basicSlider .MS-content .item {
+                width: 25%;
+            }
+        }
+
+        @media (max-width: 767px) {
+
+            #basicSlider .MS-content .item {
+                width: 35%;
+            }
+        }
+
+        @media (max-width: 500px) {
+
+            #basicSlider .MS-content .item {
+                width: 50%;
+            }
+        }
+
+        #basicSlider .MS-content .item a {
+            line-height: 50px;
+            vertical-align: middle;
+        }
+
+        #basicSlider .MS-controls button {
+            position: absolute;
+            border: none;
+            background-color: transparent;
+            outline: 0;
+            font-size: 50px;
+            top: 95px;
+            color: rgba(0, 0, 0, 0.4);
+            transition: 0.000015s linear;
+        }
+
+        #basicSlider .MS-controls .MS-left {
+            top: 35px;
+            left: 10px;
+        }
+
+        #basicSlider .MS-controls .MS-right {
+            top: 35px;
+            right: 10px;
+        }
+
+
+        #basicSlider .MS-content .item a:hover {
+            text-shadow: 0 0 1px grey;
+        }
+    </style> -->
+</head>
+
+<body style="background-color: whitesmoke;">
+
+    <div class="container">
+        <h1>jQuery Multislider Demos</h1>
+        <h2>Basic</h2>
+        <div id="basicSlider">
+            <div class="MS-content">
+                <div class="item"> <a href="http://www.google.com" target="_blank"> <img
+                            src="https://www.nsgm.gov.in/sites/default/files/styles/front_page_icon_slider_220_100/public/mygov_7.png" alt="" /> </a> </div>
+                <div class="item"> <a href="http://www.google.com" target="_blank"> <img
+                            src="https://www.nsgm.gov.in/sites/default/files/styles/front_page_icon_slider_220_100/public/natportal_0.png" alt="" /> </a> </div>
+                <div class="item"> <a href="http://www.google.com" target="_blank"> <img
+                            src="https://www.nsgm.gov.in/sites/default/files/styles/front_page_icon_slider_220_100/public/minofpower_3.png" alt="" /> </a> </div>
+                <div class="item"> <a href="http://www.google.com" target="_blank"> <img
+                            src="http://placehold.it/125x26" alt="" /> </a> </div>
+                <div class="item"> <a href="http://www.google.com" target="_blank"> <img
+                            src="http://placehold.it/125x26" alt="" /> </a> </div>
+                <div class="item"> <a href="http://www.google.com" target="_blank"> <img
+                            src="https://www.nsgm.gov.in/sites/default/files/styles/front_page_icon_slider_220_100/public/digitalindia_0.png" alt="" /> </a> </div>
+                <div class="item"> <a href="http://www.google.com" target="_blank"> <img
+                            src="http://placehold.it/125x26" alt="" /> </a> </div>
+                <div class="item"> <a href="http://www.google.com" target="_blank"> <img
+                            src="http://placehold.it/125x26" alt="" /> </a> </div>
+                <div class="item"> <a href="http://www.google.com" target="_blank"> <img
+                            src="http://placehold.it/125x26" alt="" /> </a> </div>
+                <div class="item"> <a href="http://www.google.com" target="_blank"> <img
+                            src="http://placehold.it/125x26" alt="" /> </a> </div>
+                <div class="item"> <a href="http://www.google.com" target="_blank"> <img
+                            src="http://placehold.it/125x26" alt="" /> </a> </div>
+            </div>
+            <div class="MS-controls">
+                <button class="MS-left"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+                <button class="MS-right"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+            </div>
+        </div>
+
+    </div>
+
+    <button>Return background-color of p</button>
+    <script>
+
+        $(document).ready(function () {
+            $("button").click(function () {
+                // $("p").css("background-color", "yellow");
+                // $("*").css({"font-size": "110%", "line-height": "2"});
+                //    alert("dfd");
+                //   $("*").css("class", "AAA");
+                //$('.demo').textTailor({"minFont":"2","fit": "true"});
+            });
+            $('#basicSlider').multislider({
+                continuous: true,
+                //interval: 200,
+                duration: 4000
+            });
+        });
+    </script>
+
+
+    
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>TN Electricity Board Association</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    <script src="jquery.marquee.min.js"></script>
+
+    <style type="text/css">
+        body {
+          margin: 10px;
+          font-family: 'Lato', sans-serif;
+        }
+        small {
+            font-size: 14px;
+        }
+        h1 {
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+
+        h2 {
+            border-bottom: 1px dotted #ccc;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+
+        .marquee,
+        .marquee-with-options
+       {
+          width: 700px;
+          overflow: hidden;
+         
+        }
+    </style>
+
+    <style>
+    
+    /* style.css */
+AAA {
+   font-size: 16px;
+   line-height: 2;
+}
+
+BBB {
+   font-size: 20px;
+   line-height: 3;
+}
+
+</style>
+
+
+    <script>
+        $(function () {
+                $('.marquee').marquee();
+
+            });
+
+
+
+        $(function () {
+            // $('.marquee').marquee({
+
+            //     //If you wish to always animate using jQuery
+            //     allowCss3Support: true,
+
+            //     //works when allowCss3Support is set to true - for full list see http://www.w3.org/TR/2013/WD-css3-transitions-20131119/#transition-timing-function
+            //     css3easing: 'linear',
+
+            //     //requires jQuery easing plugin. Default is 'linear'
+            //     easing: 'linear',
+
+            //     //pause time before the next animation turn in milliseconds
+            //     delayBeforeStart: 1000,
+            //     //'left', 'right', 'up' or 'down'
+            //     direction: 'left',
+
+            //     //true or false - should the marquee be duplicated to show an effect of continues flow
+            //     duplicated: false,
+
+            //     //speed in milliseconds of the marquee in milliseconds
+            //     duration: 5000,
+
+            //     //gap in pixels between the tickers
+            //     gap: 20,
+
+            //     //on cycle pause the marquee
+            //     pauseOnCycle: false,
+
+            //     //on hover pause the marquee - using jQuery plugin https://github.com/tobia/Pause
+            //     pauseOnHover: false,
+
+            //     //the marquee is visible initially positioned next to the border towards it will be moving
+            //     startVisible: false
+
+            // });
+            $('.marquee-with-options').marquee({
+                speed: 100,
+                gap: 50,
+                delayBeforeStart: 0,
+                direction: 'left',
+                pauseOnHover: true
+
+            });
+        });
+    </script>
+</head>
+
+<body style="background-color: whitesmoke;">
+    <div>
+        <marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();"
+            style="width:100%; float:left"><strong>Welcome to National Smart Grid Mission Web Portal.</strong></marquee>
+        <br>
+        <div class='marquee-with-options'><strong>Welcome to National Smart Grid Mission Web Portal.</strong></div>
+    </div>
+    <br>
+    <div class='marquee'>Lorem ipsum dolor sit amet, consectetur adipiscing elit END.</div>
+    <br>
+
+    <div class='marquee-with-options'>Lorem ipsum dolor sit amet, consectetur adipiscing elit END.</div>
+
+    <div class="content">
+        <b>
+            <div id="clockbox" style="font-size:10.5pt; padding-top:5px; color:#cf1515"></div>
+        </b>
+        <script type="text/javascript">
+            var tday = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+            var tmonth = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+            function GetClock() {
+                var d = new Date();
+                var nday = d.getDay(), nmonth = d.getMonth(), ndate = d.getDate(), nyear = d.getFullYear();
+                var nhour = d.getHours(), nmin = d.getMinutes(), nsec = d.getSeconds();
+                if (nmin <= 9) nmin = "0" + nmin;
+                if (nsec <= 9) nsec = "0" + nsec;
+                var clocktext = "" + tday[nday] + ", " + ndate + "-" + tmonth[nmonth] + "-" + nyear + ", " + nhour + ":" + nmin + ":" + nsec + "";
+                document.getElementById('clockbox').innerHTML = clocktext;
+            }
+            GetClock();
+            setInterval(GetClock, 1000);
+        </script>
+    </div>
+
+    <p>asdfasdfasdfa
+        sdf
+    </p>
+    <h1>asdfasdfsdf</h1>
+    <h2>asdfasdfasdf</h2>
+    
+    </div>
+
+    <button>Return background-color of p</button>
+<script>
+
+    $(document).ready(function () {
+        $("button").click(function () {
+           // $("p").css("background-color", "yellow");
+           // $("*").css({"font-size": "110%", "line-height": "2"});
+           alert("dfd");
+           $("*").css("class", "AAA");
+           //$('.demo').textTailor({"minFont":"2","fit": "true"});
+        });
+    });
+</script>
+
+
+
+
+</body>
+
+</html>

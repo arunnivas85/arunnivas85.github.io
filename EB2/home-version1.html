@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>TN Electricity Board Association</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+
+    <script src="jquery.marquee.min.js"></script>
+
+    <style>
+        /* Make the image fully responsive */
+        .carousel-inner img {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+
+    <script>
+        // Jquery Marquee with customized options
+        $(function () {
+            $('.marquee-with-left').marquee({
+                speed: 100,
+                gap: 50,
+                delayBeforeStart: 0,
+                direction: 'left',
+                pauseOnHover: true
+                // startVisible: false,
+                // allowCss3Support: true,
+                // css3easing: 'linear',
+                // easing: 'linear',
+
+            });
+            $('.marquee-with-up').marquee({
+                speed: 100,
+                gap: 50,
+                delayBeforeStart: 0,
+                direction: 'up',
+                pauseOnHover: true
+                // startVisible: false,
+                // allowCss3Support: true,
+                // css3easing: 'linear',
+                // easing: 'linear',
+
+            });
+        });
+    </script>
+
+</head>
+
+<body style="background-color: whitesmoke;">
+    <div class="container-fluid ">
+        <div class="row" style="background-color:whitesmoke;">
+
+            <!-- <marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();">
+                                <strong>Tamil Nadu Electricity Board Engineers Association Site</strong></marquee> -->
+            <div class="col-sm-8 marquee-with-left" style="overflow: hidden;">
+                <strong><span>Welcome to TamilNadu Electricity Board Engineers Association's website !!</span></strong>
+            </div>
+            <div class="col">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid ">
+
+        <div class="row" style="background-color:whitesmoke;">
+            <div class="col-sm-1">
+                <img src="tneblogo.png" class="rounded-circle" height="100px" width="100px" alt="TNEBEA logo"></img>
+            </div>
+            <div class="col-sm-8">
+                <br>
+                <h3 class="text-primary" style="font-family: 'Comfortaa';font-size: 22px;">Tamilnadu Electricity Board
+                    Engineers Association (TNEBEA) </h3>
+                <p class="text-secondary">The association was formed & registerd in 1946.</p>
+            </div>
+
+            <div class="col-sm-3 ">  
+                <br>
+                    <form class="form-inline my-2 my-lg-0">
+                           <input class="form-control" type="text" placeholder="Search">   <!--  mr-sm-2 -->
+                            <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+                        </form>
+                <!-- <a href="#">Login</a> | <a href="#">Register</a> -->
+
+                <div class="content">
+                        <b>
+                            <div id="clockbox" class="text-secondary"></div>
+                        </b>
+                        <script type="text/javascript">
+                            var tday = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+                            var tmonth = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+                            function GetClock() {
+                                var d = new Date();
+                                var nday = d.getDay(), nmonth = d.getMonth(), ndate = d.getDate(), nyear = d.getFullYear();
+                                var nhour = d.getHours(), nmin = d.getMinutes(), nsec = d.getSeconds();
+                                if (nmin <= 9) nmin = "0" + nmin;
+                                if (nsec <= 9) nsec = "0" + nsec;
+                                var clocktext = "" + tday[nday] + ", " + ndate + "-" + tmonth[nmonth] + "-" + nyear + ", " + nhour + ":" + nmin + ":" + nsec + "";
+                                document.getElementById('clockbox').innerHTML = clocktext;
+                            }
+                            GetClock();
+                            setInterval(GetClock, 1000);
+                        </script>
+                    </div>
+            </div>
+            
+
+
+        </div>
+
+
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top ">
+        <a class="navbar-brand" href="#">TNEBEA </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+            aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Gallery</a>
+                </li>
+
+                <!-- Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Services
+                    </a>
+                    <div class="dropdown-menu animated--grow-in">
+                        <a class="dropdown-item" href="#">Ask Expert</a>
+                        <a class="dropdown-item" href="#">Area Lookup</a>
+                        <a class="dropdown-item" href="#">Online Payment</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Others</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Important Links</a>
+                </li>
+                <li class="nav-item right">
+                    <a class="nav-link" href="#">Awareness</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+            </ul>
+          
+        </div>
+    </nav>
+
+
+    <div class="container-fluid">
+        <!-- Control the column width, and how they should appear on different devices -->
+        <div class="row">
+            <div class="col-sm-8" style="padding: 10px; padding-right: 0%;">
+                <div id="demo" class="carousel slide" data-ride="carousel">
+
+                    <!-- Indicators -->
+                    <ul class="carousel-indicators">
+                        <li data-target="#demo" data-slide-to="0" class="active"></li>
+                        <li data-target="#demo" data-slide-to="1"></li>
+                        <li data-target="#demo" data-slide-to="2"></li>
+                    </ul>
+
+                    <!-- The slideshow -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-80" src="la.jpg" alt="Los Angeles">
+                            <div class="carousel-caption">
+                                <h3>Los Angeles</h3>
+                                <p>We had such a great time in LA!</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-80" src="chicago.jpg" alt="Chicago">
+                            <div class="carousel-caption">
+                                <h3>Chicagos</h3>
+                                <p>Another Beautiful moment in Chicago!</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="ny.jpg" alt="New York" width="500" height="500">
+                            <div class="carousel-caption">
+                                <h3>New York</h3>
+                                <p>Rocking in Hot of the City!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#demo" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-4" style="padding: 10px; padding-bottom: 0%;">
+                <div class="card mb-3" style="max-height: 310px">
+                    <!-- style="max-height: 400px;min-height: 400px" -->
+                    <h6 class="card-header text-primary">New updates !</h6>
+                    <div class="card-body marquee-with-up"  style="overflow: hidden;">
+
+                        <span class="card-title text-primary font-weight-normal">Title Notification 1</span>
+                        <span class="badge badge-success">New</span>
+
+                        <!-- <h6 class="card-subtitle text-muted">Subtitle</h6> -->
+                        <p class="card-text" style="font-size:15px" >Welcome to Tamilandu Electricity Board Engineers' Association.
+                            quick example text to build on the card title and make up the bulk of the card's
+                            content.
+                        </p>
+                        <span class="card-title text-primary font-weight-normal">Title Notification 2</span>
+                        <!-- <h6 class="card-subtitle text-muted">Subtitle</h6> -->
+                        <p class="card-text" style="font-size:15px" >Welcome to Tamilandu Electricity Board Engineers' Association.
+                            quick example text to build on the card title and make up the bulk of the card's
+                            content.
+                        </p>
+                        <span class="card-title text-primary font-weight-normal">Title Notification 3</span>
+                        <!-- <h6 class="card-subtitle text-muted">Subtitle</h6> -->
+                        <p class="card-text" style="font-size:15px" >Welcome to Tamilandu Electricity Board Engineers' Association.
+                            quick example text to build on the card title and make up the bulk of the card's
+                            content.
+                        </p>
+                        <span class="card-title text-primary font-weight-normal">Title Notification 4</span>
+                        <!-- <h6 class="card-subtitle text-muted">Subtitle</h6> -->
+                        <p class="card-text" style="font-size:15px" >Welcome to Tamilandu Electricity Board Engineers' Association.
+                            quick example text to build on the card title and make up the bulk of the card's
+                            content.
+                        </p>
+
+
+                    </div>
+
+                    <div class="card-footer">
+                        <p class="card-text"> <a href=""> More details >> </a> </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="jumbotron ">
+            <div class="container">
+                <h2>Hello Everyone..</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A deserunt neque tempore recusandae
+                    animi soluta quasi? Asperiores rem dolore eaque vel, porro, soluta unde debitis aliquam
+                    laboriosam. Repellat explicabo, maiores!
+
+                    <div class="row">
+
+                        <div class="col-sm-4"> <input type="email" class="form-control form-control-sm"
+                                id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        </div>
+                        <div class="col">
+                            <button type="button" class="btn btn-primary btn-sm">Subcribe</button>
+                        </div>
+                    </div>
+                </p>
+            </div>
+
+        </div>
+
+
+        <!-- Page Content -->
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-8 mb-5">
+                    <h2>What We Do</h2>
+                    <hr>
+                    <p>
+                        <span>To uphold in every way, the dignity and honor of Engineering profession.</span><br>
+                        <span> To promote a sense of esprit de-corps among all Engineers.</span><br>
+                        <span> To enable to take counsel together on matters relating and affecting to their
+                            profession.</span><br>
+                        <span> To elevate engineering profession and to rise the standard of the profession.</span><br>
+                        <span> To work in co-operation with others with interest and to promote integrity for our
+                            country’s progress.</span><br>
+                        <span> To solve the unemployment problems of fellow engineers.</span><br>
+                        <span> To promote the spirit of fraternity among the Engineers.</span><br>
+                        <span> To promote the scope of keeping the members abreast of latest technique in Engineering
+                            field through the bulletins and periodicals.</span><br>
+                    </p>
+                    <a class="btn btn-primary" href="#">Call to Action &raquo;</a>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <h2>Contact Us</h2>
+                    <hr>
+                    <address>
+                        <strong>T.N.E.B. Engineers’ Association</strong>
+                        <br>793, Anna Salai
+                        <br>Chennai – 600 002.
+                        <br>(Regn.No.217/94) (Recognised in G.O.No.854 dated 06.04.1946)
+                    </address>
+                    <address>
+                        <abbr title="Phone">Phone:</abbr>
+                        28133064, 28520731
+                        <br>
+                        <abbr title="Email">Email:</abbr>
+                        <a href="mailto:#">tnebea@gmail.com</a>
+                    </address>
+                </div>
+            </div>
+            <!-- /.row -->
+
+            <div class="row">
+                <div class="col-md-4 mb-5">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="ny.jpg" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title">Card title</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse
+                                necessitatibus neque sequi doloribus.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal"> Find Out
+                                More!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="la.jpg" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title">Card title</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse
+                                necessitatibus neque sequi doloribus totam ut praesentium aut.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Find Out
+                                More!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="chicago.jpg" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title">Card title</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse
+                                necessitatibus neque.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Find Out
+                                More!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.row -->
+
+
+            <!-- The Modal -->
+            <div class="modal" id="myModal">
+                <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h1 class="modal-title">Detailed Window</h1>
+                            <button type="button" class="close" data-dismiss="modal">×</button>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <h3>Title of the story..</h3>
+                            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed
+                                do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis
+                                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                pariatur.
+                                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                mollit
+                                anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                labore
+                                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                laboris
+                                nisi ut aliquip ex ea commodo consequat.</p>
+                            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed
+                                do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis
+                                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                pariatur.
+                                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                mollit
+                                anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                labore
+                                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                laboris
+                                nisi ut aliquip ex ea commodo consequat.</p>
+
+                            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed
+                                do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis
+                                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                pariatur.
+                                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                mollit
+                                anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                labore
+                                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                laboris
+                                nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+        <!-- Footer -->
+        <footer class="py-4 bg-primary">
+            <div class="container">
+                <p class="m-0 text-center text-white">Copyright &copy; TNEBEA 2019</p>
+            </div>
+            <!-- /.container -->
+        </footer>
+</body>
+
+</html>

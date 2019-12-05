@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>TN Electricity Board Association</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css"> -->
+
+    <link href="https://www.nsgm.gov.in/sites/all/themes/multipurpose_zymphonies_theme/css/style.css" rel="stylesheet" type="text/css"> 
+
+
+
+    <script src="https://www.nsgm.gov.in/sites/all/themes/multipurpose_zymphonies_theme/js/modern-ticker.js"></script>
+    
+
+    <!-- <style>
+        /*--------------------------------------------------ModernTicker-----------------------------------------------------*/
+    
+        .modern-ticker {
+            width: 876px;
+            height: 30px;
+            line-height: 30px;
+            padding: 2px 11px 2px 2px;
+            font-size: 16px;
+            overflow: hidden;
+            margin-top: 6px;
+            margin-bottom: -14px;
+            float: left;
+        }
+    
+        .modern-ticker a {
+            text-decoration: none
+        }
+    
+        .modern-ticker ul {
+            margin: 0;
+            padding: 0;
+            list-style: none
+        }
+    
+    
+        .mt-label {
+            margin-right: 2px;
+            padding: 0 8px 0 12px;
+            float: left
+        }
+    
+        .mt-news {
+            height: 100%;
+            overflow: hidden;
+            float: left
+        }
+    
+        .mt-scroll .mt-news {
+            background-color: transparent
+        }
+    
+        .mt-round .mt-news:first-child,
+        .mt-round .mt-news:first-child a {
+            font-size: 84%;
+
+        }
+    
+        .mt-round .mt-news:last-child,
+        .mt-round .mt-news:last-child a {
+            font-size: 84%;
+        }
+    
+        .mt-scroll.mt-round .mt-news a {
+            border-radius: 0;
+            font-size: 84%;
+            font-weight: 600;
+        }
+    
+        .mt-scroll.mt-round .mt-news a:hover {
+            color: #001C32;
+            transition: color 0.2s ease-out 0s;
+        }
+    
+        .mt-news ul {
+            width: 50000px;
+            background-repeat: no-repeat;
+            background-position: -1000px;
+        }
+    
+        .mt-news li {
+            float: left;
+            background: url(https://www.nsgm.gov.in/sites/all/themes/multipurpose_zymphonies_theme/images/bullet3.png) left 11px no-repeat;
+            padding-left: 5px;
+        }
+    
+        .mt-news li a {
+            color: #039;
+        }
+    
+        .mt-news a {
+            font-size: 15px;
+            padding: 0 10px 0 10px;
+            margin-right: 2px;
+            background-repeat: no-repeat;
+            background-position: 7px center;
+            display: block
+        }
+    
+        .mt-hide {
+            display: none
+        }
+    
+        .mt-controls {
+            margin-left: 2px;
+            height: 100%;
+            position: absolute;
+            right: 2px;
+            background-repeat: no-repeat;
+            background-position: -1000px
+        }
+    
+        .mt-play,
+        .mt-prev,
+        .mt-next {
+            width: 18px;
+            height: 30px;
+            background-repeat: no-repeat;
+            background-position: center;
+            cursor: pointer;
+            float: left
+        }
+    
+        .mt-label {
+            background-color: #0099ff;
+        }
+    
+        .mt-news {
+            background-color: #dedede;
+        }
+    
+        .mt-preloader {
+            background: url("images/preloader.gif") no-repeat center;
+        }
+    
+        .mt-news ul {
+            background-image: url("https://www.nsgm.gov.in/sites/all/themes/multipurpose_zymphonies_theme/images/bullet-over.png");
+        }
+    
+        .mt-news a {
+            color: #000;
+        }
+    
+        .mt-news a:hover {
+            text-decoration: underline;
+        }
+    
+        .mt-news a:active {
+            background-color: #0077ff;
+        }
+    
+        .mt-controls {
+            background-image: url("https://www.nsgm.gov.in/sites/all/themes/multipurpose_zymphonies_theme/images/pause.png");
+        }
+    
+        /*.mt-prev, .mt-next {background-color: #0099ff;}*/
+        .mt-prev {
+            background-image: url("https://www.nsgm.gov.in/sites/all/themes/multipurpose_zymphonies_theme/images/prev.png");
+
+        }
+    
+        .mt-next {
+            background-image: url("https://www.nsgm.gov.in/sites/all/themes/multipurpose_zymphonies_theme/images/nxt.png");
+        }
+    
+        .mt-play {
+            background-image: url("https://www.nsgm.gov.in/sites/all/themes/multipurpose_zymphonies_theme/images/play.png");
+        }
+    
+        .mt-pause {
+            background-image: url("https://www.nsgm.gov.in/sites/all/themes/multipurpose_zymphonies_theme/images/pause.png");
+        }
+    
+        /*.mt-play:hover, .mt-prev:hover, .mt-next:hover {background-color: #ff2200;}*/
+        .mt-play:active,
+        .mt-prev:active,
+        .mt-next:active {
+            background-color: #ff4400;
+        }
+    
+        .mt-controls {
+            display: none;
+        }
+    
+        .mt-news {
+            width: 880px !important;
+        }
+    
+        .row-container .modern-ticker {
+            float: left;
+            font-size: 16px;
+            height: 85px;
+            overflow: hidden;
+            width: 98%;
+            margin-left: 5px;
+            position: relative;
+        }
+    
+        .row-container .modern-ticker a {
+            text-decoration: none;
+            cursor: auto;
+        }
+    
+        .row-container .modern-ticker ul {
+            margin: 0;
+            padding: 0;
+            list-style: none
+        }
+    
+        .row-container .modern-ticker ul li {
+            list-style: none;
+            background: none;
+        }
+    
+        .row-container .mt-news {
+            width: 96% !important;
+            margin-left: 25px;
+        }
+    
+        .row-container .mt-controls {
+            margin-left: 2px;
+            height: 20px;
+            width: 100%;
+            position: absolute;
+            right: 2px;
+            background-repeat: no-repeat;
+            background-position: -1000px;
+            bottom: 0px
+        }
+    
+        .row-container .mt-controls {
+            display: block;
+        }
+    
+        .row-container .mt-prev {
+            background: url(https://www.nsgm.gov.in/sites/all/themes/multipurpose_zymphonies_theme/images/prev-icon.png) no-repeat scroll left top;
+            float: left;
+            margin-top: -40px;
+            margin-left: 5px;
+            top: 15px;
+            width: 16px;
+            height: 25px;
+        }
+    
+        .row-container .mt-next {
+            background: url(https://www.nsgm.gov.in/sites/all/themes/multipurpose_zymphonies_theme/images/next-icon.png) no-repeat scroll left top;
+            float: right;
+            margin-top: -40px;
+            right: 0px;
+            top: 15px;
+            width: 16px;
+            height: 25px;
+        }
+    
+        .inner-main-content h3 {
+            color: #2a5caa;
+            padding: 0;
+            margin: 10px 0 10px 0;
+            border-bottom: 1px solid #a7a9ac;
+            display: block;
+            font-size: 20px;
+            line-height: 35px;
+        }
+    
+        .inner-main-content h2 {
+            padding: 0;
+            border-bottom: 1px solid #a7a9ac;
+            display: block;
+            font-size: 20px;
+            line-height: 35px;
+        }
+    
+        .inner-main-content p {
+            margin: 0;
+            text-align: justify;
+            line-height: 25px;
+            padding: 5px 0px 0px 0px;
+        }
+    </style> -->
+
+<body>
+
+    <div class="container">
+
+        <div class="content">
+            <script>
+
+                $(document).ready(function () {
+
+                    jQuery(function () {
+                        jQuery(".ticker1").modernTicker({
+                            effect: "scroll",
+                            scrollInterval: 20,
+                            transitionTime: 500,
+                            autoplay: true
+                        });
+
+                        alert("d");
+                    });
+                });
+
+
+
+            </script>
+
+            <div class="ticker1 modern-ticker mt-round mt-scroll">
+                <div class="mt-news" style="width: 0px;">
+                    <ul style="margin-left: -101px;">
+                        <li><a onclick="return langvisit();" href="https://www.pfcindia.com/" target="_blank"
+                                class="ext"><img typeof="foaf:Image"
+                                    src="https://www.nsgm.gov.in/sites/default/files/styles/front_page_icon_slider_220_100/public/pfcl.png?itok=bUN-4wHg"
+                                    alt="Power Finance Corporation Limited"
+                                    title="Power Finance Corporation Limited: External website that opens in a new window"></a>
+                        </li>
+                        <li><a onclick="return langvisit();" href="http://nhpcindia.com/" target="_blank"
+                                class="ext"><img typeof="foaf:Image"
+                                    src="https://www.nsgm.gov.in/sites/default/files/styles/front_page_icon_slider_220_100/public/nhpc_0.png?itok=ZlmvvNkP"
+                                    alt="National Hydroelectric Power Corporation Limited"
+                                    title="National Hydroelectric Power Corporation Limited: External website that opens in a new window"></a>
+                        </li>
+                        <li><a onclick="return langvisit();" href="https://ntpc.co.in/" target="_blank" class="ext"><img
+                                    typeof="foaf:Image"
+                                    src="https://www.nsgm.gov.in/sites/default/files/styles/front_page_icon_slider_220_100/public/ntpc_0.png?itok=hkTD7O9i"
+                                    alt="National Thermal Power Corporation Limited"
+                                    title="National Thermal Power Corporation Limited: External website that opens in a new window"></a>
+                        </li>
+                        <li><a onclick="return langvisit();" href="https://www.recindia.nic.in/" target="_blank"
+                                class="ext"><img typeof="foaf:Image"
+                                    src="https://www.nsgm.gov.in/sites/default/files/styles/front_page_icon_slider_220_100/public/recl.png?itok=xCDVwk9F"
+                                    alt="Rural Electrification Corporation Limited"
+                                    title="Rural Electrification Corporation Limited: External website that opens in a new window"></a>
+                        </li>
+                        <li><a onclick="return langvisit();" href="http://mohua.gov.in/" target="_blank"
+                                class="ext"><img typeof="foaf:Image"
+                                    src="https://www.nsgm.gov.in/sites/default/files/styles/front_page_icon_slider_220_100/public/mohua.png?itok=GkrDV16h"
+                                    alt="Ministry of Housing and Urban Affairs"
+                                    title="Ministry of Housing and Urban Affairs: External website that opens in a new window"></a>
+                        </li>
+                        <li><a onclick="return langvisit();" href="https://www.eeslindia.org/" target="_blank"
+                                class="ext"><img typeof="foaf:Image"
+                                    src="https://www.nsgm.gov.in/sites/default/files/styles/front_page_icon_slider_220_100/public/eesl.png?itok=Nv5AvhuX"
+                                    alt="Energy Efficiency Services Limited"
+                                    title="Energy Efficiency Services Limited: External website that opens in a new window"></a>
+                        </li>
+                        <li><a onclick="return langvisit();" href="http://cea.nic.in/" target="_blank" class="ext"><img
+                                    typeof="foaf:Image"
+                                    src="https://www.nsgm.gov.in/sites/default/files/styles/front_page_icon_slider_220_100/public/cea.png?itok=9lTUQzj5"
+                                    alt="Central Electricity Authority"
+                                    title="Central Electricity Authority: External website that opens in a new window"></a>
+                        </li>
+                        <li><a onclick="return langvisit();" href="https://www.digitalindia.gov.in/" target="_blank"
+                                class="ext"><img typeof="foaf:Image"
+                                    src="https://www.nsgm.gov.in/sites/default/files/styles/front_page_icon_slider_220_100/public/digitalindia_0.png?itok=Hh5qQKC9"
+                                    alt="Digital India"
+                                    title="Digital India: External website that opens in a new window"></a>
+                        </li>
+                        <li><a onclick="return langvisit();" href="https://www.mnre.gov.in/" target="_blank"
+                                class="ext"><img typeof="foaf:Image"
+                                    src="https://www.nsgm.gov.in/sites/default/files/styles/front_page_icon_slider_220_100/public/mnre_0.png?itok=Z4W5VZkF"
+                                    alt="Ministry of New and Renewable Energy"
+                                    title="Ministry of New and Renewable Energy: External website that opens in a new window"></a>
+                        </li>
+                        <li><a onclick="return langvisit();" href="https://powermin.nic.in/" target="_blank"
+                                class="ext"><img typeof="foaf:Image"
+                                    src="https://www.nsgm.gov.in/sites/default/files/styles/front_page_icon_slider_220_100/public/minofpower_3.png?itok=Dw2kUt1w"
+                                    alt="Ministry of Power"
+                                    title="Ministry of Power: External website that opens in a new window"></a></li>
+                        <li><a onclick="return langvisit();" href="https://india.gov.in/" target="_blank"
+                                class="ext"><img typeof="foaf:Image"
+                                    src="https://www.nsgm.gov.in/sites/default/files/styles/front_page_icon_slider_220_100/public/natportal_0.png?itok=4WoPhWn3"
+                                    alt="National Portal of India"
+                                    title="National Portal of India: External website that opens in a new window"></a>
+                        </li>
+                        <li><a onclick="return langvisit();" href="https://www.mygov.in/" target="_blank"
+                                class="ext"><img typeof="foaf:Image"
+                                    src="https://www.nsgm.gov.in/sites/default/files/styles/front_page_icon_slider_220_100/public/mygov_7.png?itok=RG9czDBz"
+                                    alt="My Government"
+                                    title="My Government: External website that opens in a new window"></a>
+                        </li>
+                        <li><a onclick="return langvisit();" href="https://www.powergridindia.com/" target="_blank"
+                                class="ext"><img typeof="foaf:Image"
+                                    src="https://www.nsgm.gov.in/sites/default/files/styles/front_page_icon_slider_220_100/public/powergrid_1.png?itok=wbbnnefy"
+                                    alt="Power Grid Corporation of India Limited"
+                                    title="Power Grid Corporation of India Limited: External website that opens in a new window"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="row-container">
+                <div class="mt-controls">
+                    <div class="mt-prev"></div>
+                    <div class="mt-next"></div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>
